@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+   /* Language and Environment */
+   "target": "ES2020", // คอมไพล์โค้ดให้อยู่ในรูปแบบ ECMAScript ES2020
+
+   /* Modules */
+   "module": "commonjs", // ใช้รูปแบบโมดูล CommonJS (เหมาะกับ Node.js)
+   "rootDir": "./src", // ระบุโฟลเดอร์ต้นทางของไฟล์ TypeScript (ในที่นี้คือโฟลเดอร์ปัจจุบัน)
+   "moduleResolution": "node", // ใช้วิธีการค้นหาโมดูลของ Node.js
+
+   /* JavaScript Support */
+   "allowJs": true, // อนุญาตให้ใช้ไฟล์ .js ในโปรเจกต์
+   "outDir": "./dist", // ไฟล์ที่ถูกคอมไพล์จะเก็บไว้ในโฟลเดอร์ dist
+   "noEmitOnError": true, // หยุดสร้างไฟล์ .js หากมีข้อผิดพลาดในการคอมไพล์
+
+    /* Interop Constraints */
+   "esModuleInterop": true, // รองรับการใช้ ES Modules ร่วมกับ CommonJS
+   "forceConsistentCasingInFileNames": true, // บังคับให้ชื่อไฟล์ต้องใช้ตัวพิมพ์เล็ก-ใหญ่ให้ตรงกัน
+
+    /* Type Checking */
+   "skipLibCheck": true, // ข้ามการตรวจสอบประเภทในไฟล์ .d.ts เพื่อลดเวลาในการคอมไพล์
+  },
+  "include": ["src/**/*.ts"], // ระบุไฟล์ที่ต้องการคอมไพล์
+  "exclude": ["node_modules"] // ไม่ต้องคอมไพล์ไฟล์ในโฟลเดอร์ node_modules
+}

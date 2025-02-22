@@ -1,5 +1,21 @@
 export const functiontype = () => {
 
+    // พื้นฐานการสร้างฟังก์ชัน
+    function meet(name: string): string {
+        return `Hello, ${name}!`
+    }
+
+    // console.log(meet('Somchai')) // Hello, Somchai!
+
+
+    // ฟังก์ชันที่มีค่าเริ่มต้น (Default Parameter)
+    function welcome(name: string = 'Guest'): string {
+        return `Welcome, ${name}!`
+    }
+
+    // console.log(welcome()) // Welcome, Guest!
+    // console.log(welcome('Samit')) // Welcome, Samit!
+    
     // Arrow Function หรือ Fat Arrow Function
     const greet = (name: string, title?: string): string => {
         return `Hello, ${title || ''} ${name}`
